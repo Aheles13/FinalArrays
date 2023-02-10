@@ -9,7 +9,7 @@ int main() {
 	int sum;
 
 
-	std::cout << "Hello world!\n\n";
+	//std::cout << "Hello world!\n\n";
 
 
 	// Задача 1. Сортировка половины массива.
@@ -81,6 +81,28 @@ std::cout << "Средняя температура за месяц: " << (double)sum / size2 << "\n\n";*
 	}
 	std::cout << std::endl;*/
 	 
+	//Задача 4.
+	std::cout << "Задача 1.\nИзначальный массив\n";
+	const int size1 = 10;
+	int arr1[size1];
+	srand(time(NULL));
+	for (int i = 0; i < size1; i++) {
+		arr1[i] = rand() % (10 + 1 - 1) + 1;  //[1...10] (10 + 1)
+		std::cout << arr1[i] << " ";
+	}
+	std::cout << std::endl;
+
+	std::cout << "Числа больше преведушего.\n";
+
+	for (int i = 0; i < size1; i++) {
+		if (arr1[i] > size1)
+			std::cout << size1;
+
+
+	}
+
+	
+	
 
 
 
